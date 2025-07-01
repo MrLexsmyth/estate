@@ -77,7 +77,7 @@ const Footer = () => {
 
       {/* Bottom text */}
       <div className="mt-10 border-t pt-6 text-center text-xs text-gray-500">
-        &copy; {new Date().getFullYear()} Bright Estate. All rights reserved.
+        &copy; {new Date().getFullYear()} BrightO Estate. All rights reserved.
       </div>
     </footer>
   )

@@ -8,6 +8,7 @@ import Newletter from '../../components/Newletter';
 import Hero from '../../components/Hero';
 
 
+
 const fadeInUp: Variants = {
   hidden: { opacity: 0, y: 50 },
   visible: {
@@ -51,8 +52,13 @@ export default function Home() {
         variants={fadeInUp}
       >
         <h1 className="text-3xl font-bold text-[#192839] mb-2">
-          Find Your Ideal Home in Nigeria
+          Find Your Ideal Home in Nigeria.
         </h1>
+
+        {/* <h1 className="text-[34px] sm:text-[32px] md:text-[38px] font-medium leading-[36px] sm:leading-[42px] md:leading-[45.6px] text-[#192839] dark:text-white">
+            Real Homes and Real Truth,
+            <br className="hidden lg:block" />  Heres Why People Choose BrightO
+          </h1> */}
         <p className="text-gray-600 dark:text-gray-300">
           BrightO provides powerful tools and trusted services to help you search, buy or sell with confidence.
         </p>

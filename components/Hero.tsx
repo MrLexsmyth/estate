@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
+import CountUp from 'react-countup';
 import heroBg from '../public/estate.jpg'; 
 
 const Hero = () => {
@@ -27,6 +28,27 @@ const Hero = () => {
     <button className="bg-[#00aeff] hover:bg-[#0090d2] text-white px-6 py-3 rounded-md font-semibold transition duration-300">
       Get Started
     </button>
+   
+<div className="flex items-center justify-center gap-6 mt-4">
+  {/* Block 1 */}
+  <div className="text-center">
+    <h1 className="text-4xl font-bold text-blue-600">
+      <CountUp end={500} duration={2} />+
+    </h1>
+    <p className="text-sm text-white">Verified listings</p>
+  </div>
+
+  {/* Divider */}
+  <div className="w-px h-10 bg-gray-300"></div>
+
+  {/* Block 2 */}
+  <div className="text-center">
+    <h1 className="text-4xl font-bold text-blue-600">
+      <CountUp end={12000} duration={2.5} separator="," /> 
+    </h1>
+    <p className="text-sm text-white">Happy clients served</p>
+  </div>
+</div>
   </div>
 </section>
 
