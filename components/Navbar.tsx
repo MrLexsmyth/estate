@@ -59,7 +59,7 @@ export default function Navbar() {
 
       {/* Mobile drawer menu */}
       {isOpen && (
-        <div className="md:hidden bg-white dark:bg-gray-900 px-4 pb-6 space-y-4 shadow-md">
+        <div className="md:hidden text-blue bg-white dark:bg-gray-900 px-4 pb-6 space-y-4 shadow-md mt-4 ">
           <NavLinks mobile />
 
           <div className="pt-4 border-t border-gray-300 dark:border-gray-700">
