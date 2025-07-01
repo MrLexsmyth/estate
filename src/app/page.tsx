@@ -88,26 +88,31 @@ export default function Home() {
               icon: 'https://cdn.lordicon.com/nocovwne.json',
               title: '🔍 Smart Search',
               desc: 'Filter properties by location, type, price, and more.',
+              extra: 'Home buying can be a stressful process, but we take the guess work out of finding a real estate agent.',
             },
             {
               icon: 'https://cdn.lordicon.com/bhfjfgqz.json',
               title: '💼 Verified Agents',
               desc: 'Connect with trusted real estate agents ready to help.',
+              extra: 'We vet all agents to ensure you get the best service.',
             },
             {
               icon: 'https://cdn.lordicon.com/tftaqjwp.json',
               title: '📈 Market Insights',
               desc: 'Stay ahead with real-time pricing trends and opportunities.',
+              extra: 'Make informed decisions with our comprehensive market data.',
             },
             {
               icon: 'https://cdn.lordicon.com/tdrtiskw.json',
               title: '💬 24/7 Support',
               desc: 'Get expert help any time — our team is always available.',
+              extra: 'Whether you have questions or need assistance, we’re here for you.',
             },
             {
               icon: 'https://cdn.lordicon.com/pflszboa.json',
               title: '🔒 Secure Deals',
               desc: 'Buy or rent with confidence — all listings are verified.',
+              extra: 'We ensure every property meets our high standards for quality and safety.',
             },
           ].map((item, index) => (
             <motion.div
