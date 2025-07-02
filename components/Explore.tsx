@@ -22,7 +22,7 @@ const testimonials = [
     image: "/client4.jpg", // your image path
   },
   {
-    name: "Oladipupo Titilope",
+    name: "Oladapo Titilope",
     role: "First-time Buyer",
      rating: 4,
     message:
