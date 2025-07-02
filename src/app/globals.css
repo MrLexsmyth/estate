@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@import 'keen-slider/keen-slider.min.css';
+
+
 @layer utilities {
   .animate-slide-down {
     animation: slideDown 0.3s ease-out;

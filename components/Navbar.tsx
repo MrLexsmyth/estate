@@ -38,7 +38,7 @@ export default function Navbar() {
           </a>
 
           <button className="px-6 py-2 bg-[#00aeff] text-white border border-transparent rounded hover:bg-darkblue transition duration-500">
-            Sign In
+            Login / Join
           </button>
 
           <button onClick={toggleDarkMode} className="ml-2">

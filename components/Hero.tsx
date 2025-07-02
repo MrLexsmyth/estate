@@ -39,12 +39,12 @@ const Hero = () => {
   </div>
 
   {/* Divider */}
-  <div className="w-px h-10 bg-gray-300"></div>
+  <div className="w-px h-12 bg-gray-200"></div>
 
   {/* Block 2 */}
   <div className="text-center">
     <h1 className="text-4xl font-bold text-blue-600">
-      <CountUp end={12000} duration={2.5} separator="," /> 
+      <CountUp end={120} duration={2} separator="," />k
     </h1>
     <p className="text-sm text-white">Happy clients served</p>
   </div>
