@@ -53,7 +53,7 @@ const testimonials = [
     image: '/client2.png',
   },
   {
-    name: 'Miss Jennfier.',
+    name: 'McKay Jennfier.',
     role: 'Property Owner',
      rating: 5,
     message: 'They got my property rented faster than I expected. Great platform!',
