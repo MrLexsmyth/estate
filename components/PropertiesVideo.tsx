@@ -43,9 +43,10 @@ export default function PropertyVideoGallery() {
 
   return (
     <div className="max-w-3xl mx-auto px-4 py-16 text-center">
-      <h2 className="text-5xl font-bold text-gray-800 dark:text-white mb-10">
-        Property Video Tours
-      </h2>
+      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-gray-800 dark:text-white mb-6 sm:mb-8 md:mb-10">
+  Property Video Tours
+</h2>
+
 <div {...swipeHandlers}>
       <div
         className="relative w-full aspect-video rounded-xl overflow-hidden shadow-lg cursor-pointer"
