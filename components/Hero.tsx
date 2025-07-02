@@ -48,6 +48,18 @@ const Hero = () => {
     </h1>
     <p className="text-sm text-white">Happy clients served</p>
   </div>
+
+    {/* Divider */}
+  <div className="w-px h-12 bg-gray-200"></div>
+
+  {/* Block 2 */}
+  <div className="text-center">
+    <h1 className="text-4xl font-bold text-blue-600">
+      <CountUp end={10} duration={2} separator="," />
+    </h1>
+    <p className="text-sm text-white">Prime Locations</p>
+  </div>
+  
 </div>
   </div>
 </section>
