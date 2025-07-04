@@ -1,16 +1,42 @@
 'use client';
-import Image from 'next/image';
-import { motion} from 'framer-motion';
 import React from 'react';
+import Image from 'next/image';
+import { motion, Variants } from 'framer-motion';
 import Newletter from '../../../components/Newletter';
 import NewsletterImag from '../../../public/newsletter.jpg';
 
+// Animation Variants
+const fadeUp: Variants = {
+  hidden: { opacity: 0, y: 40 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: [0.25, 0.46, 0.45, 0.94], // easeOut cubic
+    },
+  },
+};
 
-const page = () => {
+const containerVariants: Variants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { staggerChildren: 0.2 },
+  },
+};
+
+const AboutPage = () => {
   return (
     <section>
-      {/* Hero Section */}
-      <div className="w-full h-64 relative">
+      {/* ---------- Hero Section ---------- */}
+      <motion.div
+        initial="hidden"
+        animate="visible"
+        variants={fadeUp}
+        className="w-full h-64 relative"
+      >
         <Image
           src={NewsletterImag}
           alt="Newsletter"
@@ -23,18 +49,30 @@ const page = () => {
             About Us
           </h2>
         </div>
-      </div>
+      </motion.div>
 
-      {/* Hero Text */}
-     <h1 className="section-heading text-blue">
+      {/* ---------- Hero Text ---------- */}
+      <motion.h1
+        className="section-heading text-blue px-6 text-center mt-8"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={fadeUp}
+      >
         We&apos;re dedicated to helping people find homes that reflect their lifestyle and dreams.
         Explore the journey behind our platform.
-      </h1>
+      </motion.h1>
 
-      {/* Zigzag Sections */}
-      <section className="space-y-20 px-6 py-12 max-w-7xl mx-auto mb-12">
+      {/* ---------- Zigzag Section ---------- */}
+      <motion.section
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+        className="space-y-20 px-6 py-12 max-w-7xl mx-auto mb-12"
+      >
         {/* Our Mission */}
-        <div className="flex flex-col-reverse md:flex-row items-center gap-8 mb-8">
+        <motion.div className="flex flex-col-reverse md:flex-row items-center gap-8">
           <div className="md:w-1/2">
             <h2 className="text-2xl font-semibold text-blue mb-4 mt-4">Our Mission</h2>
             <p className="text-gray-700 text-base leading-7 mb-3">
@@ -51,18 +89,14 @@ const page = () => {
             </p>
           </div>
           <div className="md:w-1/2">
-            <div className="relative w-full h-72 md:h-96">
-             
-            </div>
+            <div className="relative w-full h-72 md:h-96 bg-gray-100 rounded-md"></div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Our Vision */}
-        <div className="flex flex-col md:flex-row items-center gap-8 mb-8">
+        <motion.div className="flex flex-col md:flex-row items-center gap-8">
           <div className="md:w-1/2">
-            <div className="relative w-full h-72 md:h-96">
-              
-            </div>
+            <div className="relative w-full h-72 md:h-96 bg-gray-100 rounded-md"></div>
           </div>
           <div className="md:w-1/2">
             <h2 className="text-2xl font-semibold text-blue mb-4 mt-4">Our Vision</h2>
@@ -76,10 +110,10 @@ const page = () => {
               transforming the real estate experience for everyone.
             </p>
           </div>
-        </div>
+        </motion.div>
 
         {/* Our Values */}
-        <div className="flex flex-col-reverse md:flex-row items-center gap-8 mb-8">
+        <motion.div className="flex flex-col-reverse md:flex-row items-center gap-8">
           <div className="md:w-1/2">
             <h2 className="text-2xl font-semibold text-blue mb-4 mt-4">Our Values</h2>
             <p className="text-gray-700 text-base leading-7 mb-3">
@@ -96,17 +130,17 @@ const page = () => {
             </p>
           </div>
           <div className="md:w-1/2">
-            <div className="relative w-full h-72 md:h-96">
-              
-            </div>
+            <div className="relative w-full h-72 md:h-96 bg-gray-100 rounded-md"></div>
           </div>
-        </div>
-      </section>
-       <motion.div
+        </motion.div>
+      </motion.section>
+
+      {/* ---------- Newsletter Section ---------- */}
+      <motion.div
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
-     
+        variants={fadeUp}
       >
         <Newletter />
       </motion.div>
@@ -114,5 +148,4 @@ const page = () => {
   );
 };
 
-export default page;
-
+export default AboutPage;
