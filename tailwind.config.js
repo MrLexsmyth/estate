@@ -28,6 +28,7 @@ module.exports = {
   				}
   			]
   		},
+		
   		colors: {
   			white: 'rgb(236, 238, 245)',
   			blue: '#004274',
