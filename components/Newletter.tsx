@@ -26,13 +26,13 @@ const Newletter = () => {
   </div>
 </div>
       <div className="w-full md:w-1/2 h-64 md:h-full relative">
-        <Image
-          src={NewsletterImage}
-          alt="Newsletter"
-          layout="fill"
-          objectFit="cover"
-          className=""
-        />
+       <Image
+    src={NewsletterImage}
+    alt="Newsletter"
+    fill
+    className="object-cover rounded-md"
+    priority
+  />
       </div>
     </div>
   );

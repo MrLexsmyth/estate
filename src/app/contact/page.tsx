@@ -1,5 +1,5 @@
 'use client';
-
+import Newletter from '../../../components/Newletter';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import { useState } from 'react';
 import { motion, Variants } from 'framer-motion';
@@ -39,6 +39,7 @@ export default function ContactUs() {
   };
 
   return (
+    <div>
     <section className="px-6 py-16 max-w-7xl mx-auto">
       {/* ---------- Heading ---------- */}
       <motion.div
@@ -153,16 +154,15 @@ export default function ContactUs() {
           </div>
         </motion.div>
       </motion.div>
-
-      {/* ---------- Google Map ---------- */}
+       {/* ---------- Google Map ---------- */}
       <motion.div
-        className="w-full h-[400px]"
+        className="w-full h-[400px] "
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
         variants={fadeUp}
       >
-        <h3 className="text-xl font-semibold text-center text-blue mb-6 mt-10">
+        <h3 className="text-xl font-semibold text-center text-blue mb-6 ">
           Find Us on the Map
         </h3>
 
@@ -174,9 +174,25 @@ export default function ContactUs() {
           allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          className="rounded-md shadow-md"
+          className="rounded-md shadow-md mb-8"
         ></iframe>
       </motion.div>
+
+   
     </section>
+
+    
+     
+       {/* ---------- Newsletter Section ---------- */}
+      <motion.div
+      
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={fadeUp}
+      >
+        <Newletter />
+      </motion.div>
+    </div>
   );
 }
