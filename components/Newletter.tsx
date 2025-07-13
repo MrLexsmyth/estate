@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+
 import NewsletterImage from '../public/newsletter.jpg'; 
 
 const Newletter = () => {
@@ -26,13 +27,14 @@ const Newletter = () => {
   </div>
 </div>
       <div className="w-full md:w-1/2 h-64 md:h-full relative">
-       <Image
-    src={NewsletterImage}
-    alt="Newsletter"
-    fill
-    className="object-cover rounded-md"
-    priority
-  />
+   <Image
+  src={NewsletterImage}
+  alt="Newsletter"
+  fill
+  className="object-cover rounded-md"
+  priority
+/>
+
       </div>
     </div>
   );

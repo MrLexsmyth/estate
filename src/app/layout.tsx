@@ -52,12 +52,12 @@ export default function RootLayout({
             <Script src="https://cdn.lordicon.com/lordicon.js" strategy="beforeInteractive" />
       </head>
       <body>    
-         <Navbar />
-           <main>
-               {children}
-           </main>
-         <Footer />
-      </body>
+  <Navbar />
+  <main style={{ paddingTop: '66px' }}>
+    {children}
+  </main>
+  <Footer />
+</body>
     </html>
   );
 }

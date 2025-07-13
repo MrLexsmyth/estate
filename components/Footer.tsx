@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from "next/image"
+import Image from "next/legacy/image"
 import Link from 'next/link'
 
 const Footer = () => {
@@ -13,8 +13,8 @@ const Footer = () => {
   <Image
     src="/logo4.png"
     alt="Bright Estate Logo"
-    width={65}
-    height={30}
+    width={100}
+    height={40}
     className="h-auto w-auto"
     priority
   />

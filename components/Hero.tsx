@@ -1,12 +1,12 @@
 'use client';
 import React from 'react';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import CountUp from 'react-countup';
 import heroBg from '../public/estate.jpg'; 
 
 const Hero = () => {
   return (
- <section className="relative w-full h-[90vh]">
+ <section className="relative w-full h-[92vh] mb-8">
   <Image
     src={heroBg}
     alt="Hero Background"
@@ -44,7 +44,7 @@ const Hero = () => {
   {/* Block 2 */}
   <div className="text-center">
     <h1 className="text-4xl font-bold text-blue-600">
-      <CountUp end={120} duration={2} separator="," />k
+      <CountUp end={11} duration={2} separator="," />k
     </h1>
     <p className="text-sm text-white">Happy clients served</p>
   </div>

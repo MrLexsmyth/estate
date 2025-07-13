@@ -33,7 +33,7 @@ const staggerContainer: Variants = {
 
 export default function Home() {
   return (
-    <div className="alex">
+    <div >
       {/* Hero Section */}
       <motion.div
         initial="hidden"

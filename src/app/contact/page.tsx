@@ -1,4 +1,5 @@
 'use client';
+
 import Newletter from '../../../components/Newletter';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import { useState } from 'react';
@@ -40,6 +41,7 @@ export default function ContactUs() {
 
   return (
     <div>
+     
     <section className="px-6 py-16 max-w-7xl mx-auto">
       {/* ---------- Heading ---------- */}
       <motion.div
@@ -49,7 +51,7 @@ export default function ContactUs() {
         viewport={{ once: true }}
         variants={fadeUp}
       >
-        <h2 className="text-4xl font-extrabold text-blue mb-4 mt-4">Get in Touch</h2>
+        <h2 className="text-4xl font-extrabold text-blue mb-4">Get in Touch</h2>
         <p className="text-gray-600 max-w-xl mx-auto">
           Have questions, suggestions, or just want to say hi? We&apos;d love to hear from you!
         </p>
