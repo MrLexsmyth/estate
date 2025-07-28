@@ -6,7 +6,9 @@ import PropertyCarousel from '../../components/PropertyCarousel';
 import Explore from '../../components/Explore';
 import Newletter from '../../components/Newletter';
 import Hero from '../../components/Hero';
+
 import PropertyVideoSlider from '../../components/PropertiesVideo';
+import Whatwedo from '../../components/Whatwedo';
 
 
 
@@ -42,38 +44,9 @@ export default function Home() {
         variants={fadeInUp}
       >
         <Hero />
+       
       </motion.div>
-
-      {/* Hero Text */}
-      <motion.div
-        className="hero-text text-center px-4 mt-6"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-        variants={fadeInUp}
-      >
-        <h1 className="text-3xl font-bold text-[#192839] mb-2">
-          Find Your Ideal Home in Nigeria.
-        </h1>
-
-        {/* <h1 className="text-[34px] sm:text-[32px] md:text-[38px] font-medium leading-[36px] sm:leading-[42px] md:leading-[45.6px] text-[#192839] dark:text-white">
-            Real Homes and Real Truth,
-            <br className="hidden lg:block" />  Heres Why People Choose BrightO
-          </h1> */}
-        <p className="text-gray-600 dark:text-gray-300">
-          BrightO provides powerful tools and trusted services to help you search, buy or sell with confidence.
-        </p>
-      </motion.div>
-
-      {/* Property Carousel */}
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-        variants={fadeInUp}
-      >
-        <PropertyCarousel />
-      </motion.div>
+    
 
       {/* Feature Cards */}
       <motion.div
@@ -83,7 +56,11 @@ export default function Home() {
         viewport={{ once: true, amount: 0.2 }}
         variants={staggerContainer}
       >
+         <Whatwedo />
+
+      
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+         
           {[
             {
               icon: 'https://cdn.lordicon.com/msoeawqm.json',
@@ -93,7 +70,7 @@ export default function Home() {
             },
             {
               icon: 'https://cdn.lordicon.com/nocovwne.json',
-              title: '🔍 Smart Search',
+              title: '🔍 Rent, Love, Live',
               desc: 'Filter properties by location, type, price, and more.',
               extra: 'Home buying can be a stressful process, but we take the guess work out of finding a real estate agent.',
             },
@@ -147,7 +124,33 @@ export default function Home() {
           ))}
         </div>
       </motion.div>
+      {/* Hero Text */}
+      <motion.div
+        className="hero-text text-center px-4 mt-6"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={fadeInUp}
+      >
+        <h1 className="text-3xl font-bold text-[#192839] mb-2">
+          Find Your Ideal <span className='text-red'>Home</span> in Nigeria.
+        </h1>
 
+       
+        <p className="text-gray-600 dark:text-gray-300">
+          BrightO provides powerful tools and trusted services to help you search, buy or sell with confidence.
+        </p>
+      </motion.div>
+
+      {/* Property Carousel */}
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={fadeInUp}
+      >
+        <PropertyCarousel />
+      </motion.div>
       {/* Explore Section */}
       <motion.div
         initial="hidden"

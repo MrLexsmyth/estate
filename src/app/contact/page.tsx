@@ -85,7 +85,7 @@ export default function ContactUs() {
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">Email</label>
+            <label className="block text-sm font-medium text-gray-700 mb-1 mt-2">Email</label>
             <input
               type="email"
               name="email"
@@ -98,7 +98,7 @@ export default function ContactUs() {
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">Message</label>
+            <label className="block text-sm font-medium text-gray-700 mb-1 mt-2">Message</label>
             <textarea
               name="message"
               value={form.message}
@@ -112,7 +112,7 @@ export default function ContactUs() {
 
           <button
             type="submit"
-            className="flex items-center gap-2 bg-[#00aeff] text-white px-6 py-3 rounded-md hover:bg-darkblue transition duration-300"
+            className="flex items-center gap-2 bg-[#00aeff] text-white px-6 py-3 rounded-md hover:bg-darkblue transition duration-300 mb-1 mt-2"
           >
             <Send size={18} /> Send Message
           </button>

@@ -13,13 +13,21 @@ import Property4 from '../public/property4.svg';
 
 
 const testimonials = [
+    {
+    name: "Mr Stephen Bello",
+    role: "Homeowner",
+     rating: 5,
+    message:
+      "BrightO helped me find my dream home in just a week. The service was seamless!",
+    image: "/client6.jpg", 
+  },
   {
     name: "Adeshina Muktar",
     role: "Homeowner",
      rating: 5,
     message:
       "BrightO helped me find my dream home in just a week. The service was seamless!",
-    image: "/client4.jpg", // your image path
+    image: "/client4.jpg", 
   },
   {
     name: "Oladapo Titilope",
@@ -100,7 +108,7 @@ const cardVariants: Variants = {
     y: 0,
     transition: {
       duration: 0.5,
-      ease: 'easeOut' as const  // 👈 Fix for TypeScript
+      ease: 'easeOut' as const  
     }
   }
 };
@@ -211,7 +219,7 @@ useEffect(() => {
         </p>
       </motion.div>
 
-      {/* Carousel */}
+    
       <div
   ref={carouselRef}
   onMouseEnter={() => setIsHovered(true)}

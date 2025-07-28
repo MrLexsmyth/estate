@@ -1,5 +1,6 @@
 import type { Config } from 'tailwindcss';
 import animate from 'tailwindcss-animate';
+import typography from '@tailwindcss/typography';
 
 const config: Config = {
   darkMode: ['class', 'class'],
@@ -62,15 +63,25 @@ const config: Config = {
           4: 'hsl(var(--chart-4))',
           5: 'hsl(var(--chart-5))',
         },
+        red: '#ff0000',
       },
       borderRadius: {
         lg: 'var(--radius)',
         md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)',
       },
+      keyframes: {
+        scroll: {
+          '0%, 100%': { transform: 'translateY(0)', opacity: '0' },
+          '50%': { transform: 'translateY(10px)', opacity: '1' },
+        },
+      },
+      animation: {
+        'scroll-dot': 'scroll 1.5s infinite',
+      },
     },
   },
-  plugins: [animate],
+  plugins: [animate, typography],
 };
 
 export default config;

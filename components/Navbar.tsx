@@ -141,7 +141,7 @@ const NavLinks = ({
   const links = [
     { href: '/', label: 'Home' },
     { href: '/listings', label: 'Listings' },
-    { href: '/agents', label: 'Agents' },
+    { href: '/agents', label: 'Our Team' },
     { href: '/about', label: 'About' },
     { href: '/contact', label: 'Contact' },
     { href: '/blog', label: 'Blog' },
