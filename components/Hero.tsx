@@ -7,7 +7,7 @@ import ScrollIndicator from '../components/ScrollIndicator';
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-[92vh] mb-8 overflow-hidden">
+    <section className="relative w-full h-[100vh] mb-8 overflow-hidden">
       {/* Background Image */}
       <Image
         src={heroBg}
@@ -68,7 +68,7 @@ const Hero = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-30 mb-8">
+      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-30 mb-14">
         <ScrollIndicator />
       </div>
 
