@@ -116,6 +116,11 @@ export default function PropertyCarousel() {
                   <span>{property.price}</span>
                   <span>{property.bedrooms} Bed</span>
                 </div>
+                
+                  <button className="relative overflow-hidden group bg-[#00aeff] text-white px-6 py-2 rounded-md font-semibold border border-[#00aeff] transition duration-600">
+  <span className="relative z-10">More Details</span>
+  <span className="absolute inset-0 bg-darkblue scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"></span>
+</button>
               </div>
             </div>
           </SwiperSlide>

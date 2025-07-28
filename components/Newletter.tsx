@@ -31,7 +31,7 @@ const Newletter = () => {
   src={NewsletterImage}
   alt="Newsletter"
   fill
-  className="object-cover rounded-md"
+  className="object-cover"
   priority
 />
 
